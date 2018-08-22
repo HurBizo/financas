@@ -1,7 +1,8 @@
+def selecao(s)
 def menu():
-  print('''enu
-        2 - Dadois financeiros
-        3 ''')
+  s = input('''Menu:
+        1 - Dadois financeiros
+        2 - Sair ''')
 def soma(cred,alu,sla,luz):
   r = cred+alu+sla+luz
   return print("Você deve por mês: R$",r)
