@@ -1,13 +1,14 @@
 
 import os
+cliente = []
 class Fina:
     def limpar():
         os.system('cls' if os.name == 'nt' else 'clear')
         
     def novoDes():
         Fina.limpar()
-        list = [input("Digite o nome da despesa: ")]
-        list = (input("Valor: R$"))
+        cliente = [input("Digite o nome da despesa: ")]
+        cliente = [(input("Valor: R$"))]
         print(nome, "-", i)
         input("\nAdicionado com sucesso! precione ENTER para continuar\n\n")
         Fina.limpar()
