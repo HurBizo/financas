@@ -6,8 +6,8 @@ class Fina:
         
     def novoDes():
         Fina.limpar()
-        nome = input("Digite o nome da despesa: ")
-        i = int(input("Valor: R$"))
+        list = [input("Digite o nome da despesa: ")]
+        list = (input("Valor: R$"))
         print(nome, "-", i)
         input("\nAdicionado com sucesso! precione ENTER para continuar\n\n")
         Fina.limpar()
