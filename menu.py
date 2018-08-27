@@ -1,4 +1,4 @@
-
+import dbm
 import os
 
 Nome = ["Cartão","Luz","Agua","Aluguel"]
@@ -10,10 +10,11 @@ class Fina:
         
     def novoDes():
         Fina.limpar()
-        Valor.pop()
-        Nome.append(input("Digite o nome da despesa: "))
-        Valor.append(input("Valor: R$"))
-        print(nome, "-", i)
+        db = dbm.open('contatos.db', 'c')
+        v = input("Valor: ")
+        s = input("Nome: ")
+        db[s] = v 
+        print(db[s])
         input("\nAdicionado com sucesso! precione ENTER para continuar\n\n")
         Fina.limpar()
         Fina.menu()
